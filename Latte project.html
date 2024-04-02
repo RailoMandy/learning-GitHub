@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=Latte, initial-scale=1.0" />
+    <title>The latte Project</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: whitesmoke;
+        border: 2px solid orangered;
+        border-radius: 5px;
+        width: 300px;
+        display: block;
+        margin: 40px auto;
+        line-height: 40px;
+      }
+      h2 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      body {
+        background: linear-gradient(68.6deg, #f74b00, #ffe000);
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 6px;
+      }
+      p {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 17px;
+        font-weight: 900;
+        line-height: 1.5;
+        margin: 20px auto;
+        width: 500px;
+      }
+      hr {
+        width: 500px;
+      }
+      button {
+        text-align: center;
+        padding: 15px 20px;
+        color: wheat;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 4px;
+        margin: 30px auto;
+        border: 1px solid, #f74b00;
+        background: #f74b00;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        color: #f74b00;
+        background: whitesmoke;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>I love Latte!</h1>
+      <h2>Especially Iced caramel latte</h2>
+
+      <img src="project pictures/latte2.jpg" alt="iced latte" width="400" />
+      <hr />
+      <p>
+        Indulge in a delightful blend of smooth iced caramel latte, crowned with
+        heavenly whipped cream and adorned with a sprinkle of crunchy nuts for a
+        decadent treat that's both refreshing and satisfying. Sip into luxury
+        with each creamy sip, as velvety caramel dances on your palate. Let the
+        whipped cream add a touch of whimsy, while the nutty crunch elevates
+        every moment. It's not just a drink—it's a symphony of flavors, a
+        blissful escape in every sip.
+      </p>
+     <script>
+  function orderNow() {
+    let name = prompt("What is your name?");
+    let email = prompt("What is your email address?");
+    let age = prompt("How old are you?");
+    let ice = prompt("Have you tried iced caramel latte before?").toLowerCase();
+
+    if (ice === "yes") {
+      alert("Fantastic! Our iced caramel latte offers a unique twist on the classic iced latte experience. With the perfect balance of rich caramel and smooth espresso, it's sure to delight your taste buds. We'd love for you to give it a try and experience the indulgence for yourself!");
+    } else if (ice === "no") {
+      alert("No worries at all! Our iced caramel latte is a great place to start. It's a refreshing blend of creamy milk, bold espresso, and decadent caramel flavor that's perfect for any coffee lover. We think you'll enjoy it, and we'd be thrilled to introduce you to this delicious beverage!");
+    }
+    alert("Thank you so much, " + name + ", for your order! We're thrilled to have you try our iced caramel latte. Your order is now being processed with care. If you have any questions or need further assistance, please don't hesitate to reach out. Have a wonderful day!");
+  }
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    let orderNowbutton = document.querySelector("button");
+    orderNowbutton.addEventListener("click", orderNow);
+  });
+</script>
+
+      <div class="learn">
+        <a href="https://www.wikipedia.org/"> Learn more on Wikipedia </a>
+      </div>
+    </div>
+    <button>🫰Order Now</button>
+    <footer>Coded with 🤍 by Mandy Railo</footer>
+  </body>
+</html>
